@@ -11,7 +11,7 @@ import java.sql.SQLDataException;
 
 /**
  *
- * @author user
+ * @author
  */
 
 public class Koneksi {
