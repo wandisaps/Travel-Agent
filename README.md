@@ -7,7 +7,7 @@ Politeknik Caltex Riau
 
 # Screenshot
 
-User Interface
+# User Interface
 
 ![image](https://user-images.githubusercontent.com/74707401/126677659-3666da73-684d-489a-b384-9c5372d0f1a1.png)
 
@@ -21,7 +21,7 @@ User Interface
 
 ![image](https://user-images.githubusercontent.com/74707401/126677899-f3db5be0-da7a-4145-9422-6221ee7feed0.png)
 
-Report
+# Report
 
 ![image](https://user-images.githubusercontent.com/74707401/126677346-650622d6-a00c-418e-8006-b0d928f6ffdb.png)
 
