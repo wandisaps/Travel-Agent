@@ -17,5 +17,4 @@ Politeknik Caltex Riau
 
 ![image](https://user-images.githubusercontent.com/74707401/126676213-7d3ce936-d5f1-4d04-af01-98c2a5b7a2a4.png)
 
-![image](https://user-images.githubusercontent.com/74707401/126676229-412a1479-7f8a-46d4-bde5-741fb24ddfdc.png)
 
