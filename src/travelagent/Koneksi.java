@@ -9,10 +9,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLDataException;
 
-/**
- *
- * @author Lenovo
- */
+
 
 public class Koneksi {
     public static Connection MySQLConfig;
