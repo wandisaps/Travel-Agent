@@ -9,15 +9,11 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLDataException;
 
-/**
- *
- * @author lenovo
- */
+
 
 public class Koneksi {
-    private static Connection MySQLConfig;
-    
-    static Connection config() throws SQLDataException {
+    public static Connection MySQLConfig;
+    public static Connection configDB() throws SQLDataException {
         try {
             String url = "jdbc:mysql://localhost:3306/travel-agent";
             String user = "root";

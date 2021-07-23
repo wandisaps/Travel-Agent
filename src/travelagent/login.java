@@ -20,10 +20,11 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.SwingConstants;
+import TravelAgent.Koneksi;
 
 /**
  *
- * @author User
+ * @author Lenovo
  */
 public class login extends javax.swing.JFrame {
 
@@ -48,25 +49,23 @@ public class login extends javax.swing.JFrame {
     }
 
     public void cek() throws SQLDataException, SQLException {
-        Connection kon = Koneksi.config();
+        Connection kon = Koneksi.configDB();
 
         try {
             String sql = "SELECT * FROM user where username = '" + jTextField1.getText() + "' and password = '" + jPasswordField1.getText() + "'";
-            java.sql.Connection conn = (Connection) Koneksi.config();
+            java.sql.Connection conn = (Connection) Koneksi.configDB();
             java.sql.Statement stm = conn.createStatement();
             java.sql.ResultSet res = stm.executeQuery(sql);
 
             if (res.next()) {
                 if (res.getString("role").equals("admin")) {
                     JOptionPane.showMessageDialog(null, "Anda berhasil login sebagai admin");
-                    homeAdmin fa = new homeAdmin();
-                    fa.show();
                     this.dispose();
+                    new travelagent.Home().setVisible(true); 
                 } else if (res.getString("role").equals("user")) {
                     JOptionPane.showMessageDialog(null, "Anda berhasil login");
-                    dashboard fu = new dashboard();
-                    fu.show();
                     this.dispose();
+                    new travelagent.Pegawai().setVisible(true); 
                 }
             } else {
                 JOptionPane.showMessageDialog(null, "Maaf password atau username anda salah");
@@ -102,7 +101,7 @@ public class login extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(0, 51, 102));
+        jPanel1.setBackground(new java.awt.Color(54, 33, 89));
         jPanel1.setBorder(new javax.swing.border.MatteBorder(null));
 
         jLabel1.setFont(new java.awt.Font("Gadugi", 1, 18)); // NOI18N
@@ -155,7 +154,7 @@ public class login extends javax.swing.JFrame {
 
         jLabel6.setFont(new java.awt.Font("Gadugi", 1, 18)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/6.png"))); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/1.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
