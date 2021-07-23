@@ -20,7 +20,7 @@ import TravelAgent.login;
 
 /**
  *
- * @author User
+ * @author Lenovo
  */
 public class register extends javax.swing.JFrame {
 
@@ -62,7 +62,7 @@ public class register extends javax.swing.JFrame {
                         + "'" + jTextField4.getText() +"',"
                         + "'"+jPasswordField1.getText()+"',"
                         + "'"+ jTextField3.getText() + "','user')";
-                java.sql.Connection conn = Koneksi.config();
+                java.sql.Connection conn = Koneksi.configDB();
                 java.sql.PreparedStatement pstm = conn.prepareStatement(sql);
                 pstm.execute();
                 JOptionPane.showMessageDialog(null, "Registrasi Berhasil");
@@ -105,7 +105,7 @@ public class register extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(0, 51, 102));
+        jPanel1.setBackground(new java.awt.Color(54, 33, 89));
 
         jLabel1.setFont(new java.awt.Font("Gadugi", 1, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
